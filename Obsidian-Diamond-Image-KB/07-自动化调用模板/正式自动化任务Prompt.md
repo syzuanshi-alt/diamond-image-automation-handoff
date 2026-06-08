@@ -5,11 +5,12 @@
 任务目标：
 每天读取独立 Obsidian 知识库，生成钻石电商图片素材。第一阶段重点是把图片素材关卡做好：批量提示词、提示词去重、生图、AI 自动审核、合格入库、不合格重生或废弃。
 
-知识库路径：
-D:\2026\钻石自动化生图\Obsidian-Diamond-Image-KB
+路径变量：
+- project_root：默认 D:\2026\钻石自动化生图
+- kb_root：默认 {{project_root}}\Obsidian-Diamond-Image-KB
+- output_root：默认 {{project_root}}\daily-runs\{{date}}
 
-输出路径：
-D:\2026\钻石自动化生图\daily-runs\{{date}}
+执行前先确认以上路径存在；如果项目路径不同，先按当前电脑实际路径替换变量，不要继续使用写死旧路径。
 
 批量模式：
 - preview：2 套
@@ -58,7 +59,7 @@ D:\2026\钻石自动化生图\daily-runs\{{date}}
 - product_dna
 - design_language_tag
 - persona_frame
-- person_frame
+- age_band
 - outfit_frame
 - skin_direction
 - hairstyle_direction
@@ -119,3 +120,30 @@ D:\2026\钻石自动化生图\daily-runs\{{date}}
 - 产品展示自然度不低于 8.5。
 - 人物真实感、人物年轻化和个性、动作自然度、低 AI 味均不低于 8.0。
 - 商用安全必须通过。
+
+审核输出必须使用固定 JSON 结构，便于后续自动重生和废弃：
+
+```json
+{
+  "set_id": "",
+  "shot_type": "full_body | half_body | macro",
+  "scores": {
+    "product_consistency": 0,
+    "diamond_realism": 0,
+    "colored_diamond_realism": null,
+    "human_realism": 0,
+    "youth_persona": 0,
+    "action_naturalness": 0,
+    "product_display_naturalness": 0,
+    "low_ai_feel": 0,
+    "composition_usability": 0,
+    "video_usability": 0
+  },
+  "commercial_safety": "pass | fail",
+  "hard_fail": false,
+  "fail_reason_codes": [],
+  "retry_allowed": false,
+  "retry_prompt_patch": "",
+  "final_decision": "pass | retry | reject"
+}
+```

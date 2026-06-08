@@ -1,6 +1,6 @@
-# 钻石自动化生图项目 GitHub 接力版
+# 钻石自动化生图项目工作流
 
-这是一个面向美国用户的钻石电商批量生图工作流项目。这个文件夹是 GitHub 接力版，只保存可维护的工作流、Obsidian 知识库、提示词干跑样本和项目状态，不保存大量图片、视频、压缩包或临时输出。
+这是一个面向美国用户的钻石电商批量生图工作流项目。仓库只保存可维护的工作流、Obsidian 知识库、提示词干跑样本和项目状态，不保存大量图片、视频、压缩包或临时输出。
 
 ## 目录结构
 
@@ -8,17 +8,18 @@
 - `prompt-runs/`：提示词干跑结果，当前有效参考版本是 `2026-06-02-scale-50-v6`。
 - `PROJECT_STATE.md`：当前项目状态，新的 Codex 必须先读。
 - `AGENTS.md`：给 Codex 的项目级执行指令。
-- `MIGRATION_GUIDE.md`：新电脑接力操作步骤。
+- `RUNBOOK.md`：本机继续推进操作步骤。
 
-## 新电脑打开方式
+## 打开方式
 
-1. 在新电脑上从 GitHub `git clone` 这个仓库。
-2. 用 Codex 打开本项目根目录。
+1. 用 Codex 打开项目根目录。
+   - 原电脑业务目录：`D:\2026\钻石自动化生图`
+   - GitHub 同步目录：`D:\2026\diamond-image-automation-handoff`
 3. 用 Obsidian 打开 `Obsidian-Diamond-Image-KB/`。
-4. 让新 Codex 先读取：
+4. 让 Codex 先读取：
    - `AGENTS.md`
    - `PROJECT_STATE.md`
-   - `Obsidian-Diamond-Image-KB/00-总控/新电脑接力入口.md`
+   - `Obsidian-Diamond-Image-KB/00-总控/首页.md`
 5. 继续推进前，先确认当前有效版本是 `prompt-runs/2026-06-02-scale-50-v6`。
 
 ## 当前阶段

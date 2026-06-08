@@ -1,6 +1,6 @@
 # PROJECT STATE
 
-最后更新：2026-06-02
+最后更新：2026-06-08
 
 ## 项目目标
 
@@ -30,6 +30,11 @@
 - 图片自动审核评分规则。
 - 重生与废弃规则。
 - TikTok 多账号发布闭环路线草稿。
+- 已删除 Obsidian 里的旧接力入口，当前从首页作为统一入口。
+- 已将路径改为 `project_root`、`kb_root`、`output_root` 变量逻辑。
+- 已统一新自动化字段为 `product_dna`。
+- 已修正年龄去重冲突：年龄不再作为相邻窗口硬去重字段。
+- 已补充图片审核固定 JSON 输出结构。
 
 V6 干跑结果：
 - 50 套提示词。
@@ -42,8 +47,7 @@ V6 干跑结果：
 
 ## 当前有效规则
 
-新的 Codex 必须优先读取：
-- `Obsidian-Diamond-Image-KB/00-总控/新电脑接力入口.md`
+Codex 必须优先读取：
 - `Obsidian-Diamond-Image-KB/00-总控/首页.md`
 - `Obsidian-Diamond-Image-KB/01-硬规则/产品DNA一致性规则.md`
 - `Obsidian-Diamond-Image-KB/01-硬规则/彩钻比例规则.md`
@@ -58,6 +62,9 @@ V6 干跑结果：
 - 特写动作必须按品类匹配。
 - 审核更严格：核心平均分不低于 8.0，产品一致性不低于 8.5，产品展示自然度不低于 8.5。
 - 历史 `prompt-runs` 中的 `legacy_skin_and_hair_direction` 只是旧样本字段，新的自动化必须使用 `skin_direction` 和 `hairstyle_direction`。
+- 年龄层不作为相邻 5 套硬去重字段；21-24 岁可以连续出现，但人物身份、肤色、发型、妆容、穿搭、场景、动作和构图必须拉开差异。
+- 每套三张图必须复用同一段 `product_dna` 原文。
+- 图片审核必须输出固定 JSON，包含分数、失败代码、是否允许重生、重生修正提示和最终决策。
 
 ## 不要做
 
@@ -72,6 +79,8 @@ V6 干跑结果：
 - 不要默认保存到 C 盘。
 - 不要回到成熟外套贵妇模板。
 - 组合键里必须拆分使用 `skin_direction` 和 `hairstyle_direction`。
+- 不要使用旧的产品档案字段命名。
+- 不要再读取 Obsidian 的旧接力入口。
 
 ## 下一步建议
 
@@ -91,7 +100,7 @@ V6 干跑结果：
 
 ## 文件位置
 
-当前 GitHub 接力版项目根目录：
+当前 GitHub 同步仓库目录：
 
 ```text
 D:\2026\diamond-image-automation-handoff
@@ -103,4 +112,4 @@ D:\2026\diamond-image-automation-handoff
 D:\2026\钻石自动化生图
 ```
 
-如果新电脑路径不同，先让 Codex 读取本文件，再按新路径调整输出目录。GitHub 接力版默认不包含大量图片、视频和压缩包。
+GitHub 同步仓库默认不包含大量图片、视频和压缩包。正式生成仍优先输出到原始业务目录。

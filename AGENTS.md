@@ -8,10 +8,9 @@
 
 1. `README.md`
 2. `PROJECT_STATE.md`
-3. `Obsidian-Diamond-Image-KB/00-总控/新电脑接力入口.md`
-4. `Obsidian-Diamond-Image-KB/00-总控/首页.md`
+3. `Obsidian-Diamond-Image-KB/00-总控/首页.md`
 
-然后按入口文件继续读取对应规则。
+然后按首页里的调用顺序继续读取对应规则。
 
 ## 项目目标
 
@@ -40,7 +39,7 @@
 
 ## 执行顺序
 
-1. 读取 Obsidian 总控入口。
+1. 读取 Obsidian 首页。
 2. 读取硬规则。
 3. 读取产品 DNA 和产品原型池。
 4. 读取人物、场景、动作、镜头框架。
