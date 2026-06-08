@@ -1,0 +1,104 @@
+{
+  "run_id": "2026-06-02-scale-50-v2",
+  "set_count": 50,
+  "category_counts": {
+    "ring": 30,
+    "necklace": 10,
+    "earrings": 5,
+    "bracelet": 5
+  },
+  "lens_group_counts": {
+    "normal": 38,
+    "mild": 9,
+    "special": 3
+  },
+  "unique_combination_keys": 50,
+  "duplicate_combination_keys": 0,
+  "window_repeat_issues": [
+    {
+      "set_id": "set-022-necklace",
+      "field": "scene_frame",
+      "value": "city sidewalk outside a restaurant"
+    },
+    {
+      "set_id": "set-027-ring",
+      "field": "scene_frame",
+      "value": "Pilates studio or wellness club"
+    },
+    {
+      "set_id": "set-046-bracelet",
+      "field": "scene_frame",
+      "value": "city sidewalk outside a restaurant"
+    },
+    {
+      "set_id": "set-047-ring",
+      "field": "scene_frame",
+      "value": "members club lounge"
+    }
+  ],
+  "persona_counts": {
+    "stylish rich mom": 5,
+    "Pilates lifestyle creator": 5,
+    "lifestyle KOL": 4,
+    "wedding guest with money": 4,
+    "affluent influencer": 4,
+    "mature luxury shopper": 4,
+    "luxury travel shopper": 4,
+    "wealthy customer": 4,
+    "downtown cool girl with high-end taste": 4,
+    "fashion content creator": 4,
+    "private-client jewelry buyer": 4,
+    "American socialite": 4
+  },
+  "scene_counts": {
+    "airport lounge": 4,
+    "townhouse entrance": 3,
+    "yoga studio with luxury lifestyle feel": 2,
+    "outdoor wedding guest moment": 1,
+    "upscale cafe street-side": 4,
+    "members club lounge": 5,
+    "hotel breakfast lounge": 1,
+    "high-end hotel lobby or corridor": 2,
+    "art gallery opening": 2,
+    "rooftop dinner environment": 1,
+    "luxury department store personal shopping suite": 4,
+    "home closet natural light": 1,
+    "bridal shower setting": 2,
+    "city sidewalk outside a restaurant": 5,
+    "luxury car interior / private transit": 2,
+    "private event arrival area": 1,
+    "private dinner setting": 1,
+    "Pilates studio or wellness club": 3,
+    "car back seat selfie environment": 2,
+    "wine bar social setting": 1,
+    "hotel bar or lounge": 1,
+    "hotel lobby event area": 1,
+    "museum gala or collector preview": 1
+  },
+  "action_counts": {
+    "arriving or leaving": 3,
+    "stepping into light": 3,
+    "subtle body turn": 2,
+    "walking through doorway": 2,
+    "looking away from camera": 2,
+    "bag or sleeve adjustment": 2,
+    "casual phone/selfie behavior": 2,
+    "soft laughing moment": 2,
+    "private transit moment": 2,
+    "travel pause": 2,
+    "seated social moment": 2,
+    "table interaction": 2,
+    "relaxed profile moment": 2,
+    "holding a personal item": 2,
+    "leaning near counter or table": 2,
+    "hands naturally enter frame": 2,
+    "waiting naturally": 2,
+    "conversation-in-progress": 2,
+    "settling into a seat": 2,
+    "getting ready or adjusting outfit": 2,
+    "checking phone": 2,
+    "mirror-based self capture": 2,
+    "viewing art or display": 2,
+    "natural movement between spaces": 2
+  }
+}

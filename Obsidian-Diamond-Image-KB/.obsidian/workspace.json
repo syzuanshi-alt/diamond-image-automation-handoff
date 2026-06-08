@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "740e7eb00520b632",
+    "type": "split",
+    "children": [
+      {
+        "id": "683b9d012b04e52c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "873a995ec2e64843",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ad0b78ef059d513a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6536286406c75703",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6aaf6705be7eef4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "700fa3ea23b7d46c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "85ebabeb065c5568",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0717178d660fd878",
+    "type": "split",
+    "children": [
+      {
+        "id": "eed88f02a57f3e20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "614c73825c14bd10",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "bf72be9660b9b02e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "8f32f4f2dc9cb91b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "8f0f18c402f7b7c8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "74a32e4c3d63e981",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "e6aaf6705be7eef4",
+  "lastOpenFiles": [
+    "未命名 1.canvas",
+    "2026-06-02.md",
+    "未命名.canvas",
+    "00-总控/新电脑接力入口.md",
+    "01-硬规则/彩钻比例规则.md",
+    "06-低AI味规则/钻石真实感.md",
+    "02-产品框架/钻戒.md",
+    "08-自动审核/重生与废弃规则.md",
+    "03-人物框架/穿搭风格池.md",
+    "00-总控/首页.md",
+    "05-拍摄框架/动作与视角池.md",
+    "04-场景框架/场景变量池.md",
+    "01-硬规则/产品DNA一致性规则.md",
+    "00-总控/长期自动化闭环路线图.md",
+    "00-总控/网络参考来源索引.md",
+    "02-产品框架/产品DNA原型池.md",
+    "08-自动审核/图片自动审核评分规则.md",
+    "09-发布闭环/TikTok多账号赛道规划.md",
+    "09-发布闭环",
+    "08-自动审核",
+    "01-硬规则/批量放量与去重规则.md",
+    "02-产品框架/手链.md",
+    "03-人物框架/发型妆容变量池.md",
+    "07-自动化调用模板/正式自动化任务Prompt.md",
+    "02-产品框架/项链.md",
+    "02-产品框架/耳饰.md",
+    "02-产品框架/大牌设计语言参考.md",
+    "01-硬规则/商用安全边界.md",
+    "01-硬规则/每日品类比例.md"
+  ]
+}

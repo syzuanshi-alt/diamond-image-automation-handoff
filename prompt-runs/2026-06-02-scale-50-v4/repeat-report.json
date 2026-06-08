@@ -1,0 +1,124 @@
+{
+  "seed": 2026060204,
+  "set_count": 50,
+  "category_counts": {
+    "necklace": 10,
+    "bracelet": 5,
+    "earrings": 5,
+    "ring": 30
+  },
+  "lens_group_counts": {
+    "normal": 38,
+    "special": 3,
+    "mild": 9
+  },
+  "unique_combination_keys": 50,
+  "duplicate_combination_keys": 0,
+  "window_repeat_issues": [],
+  "dna_integrity_issues": [
+    {
+      "set_id": "set-011-ring",
+      "issues": [
+        "possible mixed shape word: cushion with round"
+      ]
+    },
+    {
+      "set_id": "set-031-ring",
+      "issues": [
+        "possible mixed shape word: cushion with round"
+      ]
+    },
+    {
+      "set_id": "set-042-earrings",
+      "issues": [
+        "possible mixed shape word: cushion with round"
+      ]
+    }
+  ],
+  "persona_counts": {
+    "affluent influencer": 4,
+    "luxury travel creator": 4,
+    "stylish rich mom": 5,
+    "socialite dinner guest": 3,
+    "wealthy entrepreneur": 3,
+    "old-money brunch guest": 4,
+    "wealthy creator with personal style": 4,
+    "wedding guest with money": 3,
+    "Pilates lifestyle creator": 3,
+    "mature affluent collector": 3,
+    "gallery-opening socialite": 4,
+    "art collector": 3,
+    "beauty KOL with high spending power": 3,
+    "wellness club member": 2,
+    "fashion editor type": 2
+  },
+  "scene_counts": {
+    "rooftop lounge at golden hour": 2,
+    "high-end restaurant table area": 4,
+    "luxury car interior / private transit": 3,
+    "quiet upscale home dressing area": 1,
+    "resort suite balcony": 4,
+    "art gallery opening": 3,
+    "coffee shop in an affluent neighborhood": 2,
+    "spa hotel hallway": 2,
+    "upscale hotel lobby": 4,
+    "fashion week street arrival": 2,
+    "luxury shopping mall corridor": 3,
+    "private members club lounge": 3,
+    "hotel elevator mirror area": 2,
+    "Pilates studio or wellness club": 2,
+    "boutique fitting room mirror area": 2,
+    "outdoor wedding guest moment": 3,
+    "vineyard event or charity lunch": 2,
+    "museum courtyard": 1,
+    "yacht club terrace": 2,
+    "bridal shower setting": 2,
+    "private jewelry appointment room": 1
+  },
+  "action_counts": {
+    "sitting across the table": 3,
+    "checking outfit in mirror": 3,
+    "turning body while walking": 3,
+    "turning toward a friend": 3,
+    "browsing art or display pieces": 3,
+    "holding sunglasses or small clutch": 3,
+    "settling into a seat": 2,
+    "leaning slightly into conversation": 4,
+    "crossing a lobby": 4,
+    "placing handbag down": 3,
+    "reaching for a glass or menu": 3,
+    "adjusting hair or earring naturally": 1,
+    "arriving or leaving": 2,
+    "resting hand near collarbone": 2,
+    "walking through doorway": 2,
+    "holding phone naturally": 2,
+    "trying on outerwear": 1,
+    "laughing mid-conversation": 2,
+    "looking away with a relaxed smile": 2,
+    "casually touching jacket cuff": 2
+  },
+  "archetype_counts": {
+    "necklace-round-solitaire-pendant": 1,
+    "bracelet-layered-delicate": 1,
+    "earrings-pear-drop": 2,
+    "ring-emerald-three-stone": 5,
+    "ring-oval-hidden-halo": 5,
+    "ring-radiant-pave": 4,
+    "ring-marquise-bezel": 3,
+    "necklace-emerald-pendant": 2,
+    "ring-pear-cathedral": 4,
+    "necklace-graduated-tennis": 3,
+    "ring-cushion-halo": 2,
+    "necklace-layered-delicate": 1,
+    "ring-princess-channel": 4,
+    "bracelet-mixed-line": 2,
+    "ring-round-solitaire": 3,
+    "necklace-station-diamond": 2,
+    "necklace-pear-drop-pendant": 1,
+    "earrings-diamond-huggies": 1,
+    "earrings-round-studs": 1,
+    "earrings-cushion-halo-studs": 1,
+    "bracelet-diamond-bangle": 1,
+    "bracelet-classic-tennis": 1
+  }
+}

@@ -1,0 +1,33 @@
+# Large generated assets should not live in GitHub.
+preview-runs/
+exports/
+generated_images/
+accepted-assets/
+rejected-assets/
+video-runs/
+
+# Image and video outputs.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp4
+*.mov
+
+# Local/editor/cache files.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Python/Node scratch artifacts if automation scripts are added later.
+__pycache__/
+.venv/
+venv/
+node_modules/
+dist/
+build/
