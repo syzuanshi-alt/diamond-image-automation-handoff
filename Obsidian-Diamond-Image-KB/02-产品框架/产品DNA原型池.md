@@ -49,11 +49,16 @@
 
 ## visual_scale_lock 默认规则
 
+只允许使用以下 3 个枚举值：
+- subtle
+- medium visible
+- statement but natural
+
 - 大克拉钻戒：statement but natural
 - 普通钻戒：medium visible
 - 彩钻钻戒：statement but natural
 - 经典项链：medium visible
-- 细链或叠戴项链：subtle to medium visible
+- 细链或叠戴项链：subtle
 - 耳饰：medium visible
 - 手链：medium visible
 
@@ -61,9 +66,9 @@
 
 - 白钻钻戒：low-profile only
 - 彩钻钻戒：minimal or none
-- 项链：minimal earrings allowed, no competing necklace
-- 耳饰：no competing statement necklace
-- 手链：low-profile rings allowed, no competing bracelet stack
+- 项链：minimal earrings allowed, no competing necklace, no statement earrings
+- 耳饰：no competing statement necklace, necklace must be absent or very subtle
+- 手链：low-profile rings allowed, no competing bracelet stack, watch must not dominate
 
 ## 钻戒原型
 

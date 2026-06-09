@@ -23,7 +23,7 @@ product_dna 必填字段：
 - design_language_tag：设计语言抽象标签
 - wearing_area：佩戴部位
 - silhouette：产品整体轮廓
-- visual_scale_lock：产品在三张图中的视觉大小级别，例：subtle / medium visible / statement but natural
+- visual_scale_lock：产品在三张图中的视觉大小级别，只允许 subtle / medium visible / statement but natural
 - supporting_jewelry_limit：其它珠宝存在感限制，例：none / minimal / low-profile only
 - texture_rules：钻石和金属真实感要求
 
@@ -72,8 +72,9 @@ product_dna 必填字段：
 - 引用 product_dna 时尽量使用同一段原文，不要每张图重写一遍不同措辞。
 - 彩钻只在 product_dna 中低频出现，不要在人物、场景、动作里重复强调。
 - 全身图和半身图可以自然露出产品，不硬广。
-- 全身图和半身图中，主产品不能正对镜头、不能位于画面视觉中心、不能成为人物动作目的。
-- 全身图和半身图中，主产品应像真实随拍里的自然细节：可见但不被摆出来。
+- 全身图和半身图中，主产品可以自然可见，但不能被刻意摆到镜头前。
+- 全身图和半身图中，主产品不应成为画面主要视觉中心或人物动作目的。
+- 全身图和半身图中，主产品应像真实随拍里的自然细节：可被注意到，但不被展示出来。
 - 特写图必须清楚展示产品结构。
 - 不为了产品一致性把人物和场景也写死。
 
