@@ -39,20 +39,21 @@
 6. product_dna 必须包含 diamond_color_type 和 colored_diamond_color。
 7. product_dna 必须包含 visual_scale_lock 和 supporting_jewelry_limit。
 8. 同一套 3 张图必须围绕同一个 product_dna。
-9. 每套只抽少量变量，不要把所有词库都塞进提示词。
-10. 人物画像围绕年轻网红、时装模特感达人、名媛、富婆、高消费力女性轮换；21-24 岁成人占 75%。
-11. 产品可参考高奢珠宝设计语言，但最终提示词不得出现品牌名、Logo、同款、复刻。
-12. 场景选定后，动作必须从兼容动作池抽取。
-13. 全身图和半身图以人物、穿搭、气质、场景为主，产品只自然出现，不做硬展示。
-14. 全身图和半身图中，主产品可以自然可见，但不能被刻意摆到镜头前、成为主要视觉中心或人物动作目的。
-15. 彩钻套必须压低其它珠宝存在感，避免强项链、强耳饰、手链、手表抢主彩钻产品。
-16. 产品特写必须清楚展示钻石质感、切工、金属反射和合理结构，但要像真实生活局部裁切。
-17. 项链特写优先使用 upper outfit crop / neckline styling crop / jewelry resting along neckline 的安全写法。
-18. 多数图片使用普通真实拍摄角度，少量穿插时尚杂志化街拍、direct-flash、off-duty model 视角。
-19. 正式生成每套输出 3 张独立图，不用三联图作为正式判断。
-20. 生图后必须进入图片自动审核。
-21. 合格图片进入素材库，不合格图片按规则重生或废弃。
-22. 保存图片、product_dna、提示词、评分、索引、失败日志。
+9. 每张图必须写入 product_visibility_target：全身为自然背景细节，半身为可注意到的生活方式细节，特写为清晰产品焦点。
+10. 每套只抽少量变量，不要把所有词库都塞进提示词。
+11. 人物画像围绕年轻网红、时装模特感达人、名媛、富婆、高消费力女性轮换；21-24 岁成人占 75%。
+12. 产品可参考高奢珠宝设计语言，但最终提示词不得出现品牌名、Logo、同款、复刻。
+13. 场景选定后，动作必须从兼容动作池抽取。
+14. 全身图和半身图以人物、穿搭、气质、场景为主，产品只自然出现，不做硬展示。
+15. 全身图和半身图中，主产品可以自然可见，但不能被刻意摆到镜头前、成为主要视觉中心或人物动作目的。
+16. 彩钻套必须压低其它珠宝存在感，避免强项链、强耳饰、手链、手表抢主彩钻产品。
+17. 产品特写必须清楚展示钻石质感、切工、金属反射和合理结构，但要像真实生活局部裁切。
+18. 项链特写优先使用 upper outfit crop / neckline styling crop / jewelry resting along neckline 的安全写法。
+19. 多数图片使用普通真实拍摄角度，少量穿插时尚杂志化街拍、direct-flash、off-duty model 视角。
+20. 正式生成每套输出 3 张独立图，不用三联图作为正式判断。
+21. 生图后必须进入图片自动审核。
+22. 合格图片进入素材库，不合格图片按规则重生或废弃。
+23. 保存图片、product_dna、提示词、评分、索引、失败日志。
 
 每套输出结构：
 - set_id
@@ -74,6 +75,9 @@
 - action_frame
 - composition_frame
 - lens_frame
+- shot_1_product_visibility_target
+- shot_2_product_visibility_target
+- shot_3_product_visibility_target
 - shot_1_full_body
 - shot_2_half_body
 - shot_3_macro
@@ -93,6 +97,7 @@
 - product_dna 不能内部矛盾，不能把不同切工、镶嵌、轮廓随机拼接。
 - visual_scale_lock 不能在三张图中明显漂移。
 - supporting_jewelry_limit 必须被遵守，尤其彩钻套不能让其它珠宝抢主产品。
+- product_visibility_target 必须按图型执行：全身不能硬广，半身不能摆拍展示，特写不能看不清产品。
 - colored_diamond_color 必须和 diamond_color_type 一致。
 - 不出现品牌名、品牌包装、Logo、同款描述。
 - 不要完美磨皮、CGI 感、塑料钻、玻璃假钻、过曝钻石、畸形手指。
@@ -129,6 +134,9 @@
 - 核心维度平均分不低于 8.0。
 - 产品一致性不低于 8.5。
 - 产品展示自然度不低于 8.5。
+- 产品可见度目标匹配度不低于 8.5。
+- 其它珠宝克制度不低于 8.5。
+- 产品视觉大小一致性不低于 8.5。
 - 人物真实感、人物年轻化和个性、动作自然度、低 AI 味均不低于 8.0。
 - 商用安全必须通过。
 
@@ -146,6 +154,7 @@
     "youth_persona": 0,
     "action_naturalness": 0,
     "product_display_naturalness": 0,
+    "visibility_target_match": 0,
     "supporting_jewelry_discipline": 0,
     "visual_scale_consistency": 0,
     "low_ai_feel": 0,
@@ -155,6 +164,7 @@
   "commercial_safety": "pass | fail",
   "hard_fail": false,
   "fail_reason_codes": [],
+  "failure_reasons": [],
   "retry_allowed": false,
   "retry_prompt_patch": "",
   "final_decision": "pass | retry | reject"
