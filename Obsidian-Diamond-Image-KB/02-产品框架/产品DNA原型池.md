@@ -6,9 +6,11 @@
 - 每套先从本文件选 1 个产品原型。
 - product_dna 必须保持内部一致。
 - product_dna 必须包含 diamond_color_type 和 colored_diamond_color。
+- product_dna 必须包含 visual_scale_lock 和 supporting_jewelry_limit。
 - design_language_tag 不能出现另一个不相关切工的形状词。
 - 如需变化，只允许在同一原型内微调金属色、克拉区间、颗粒大小或风格强弱。
 - 三张图必须复用同一段 product_dna 原文。
+- 三张图必须遵守同一 visual_scale_lock，不能让同一产品忽大忽小。
 - 彩钻原型按 [[01-硬规则/彩钻比例规则]] 低频使用。
 
 不允许的组合：
@@ -42,6 +44,26 @@
 - 项链、耳饰、手链只做低频点缀。
 - 彩钻颜色必须克制、真实、有自然折射。
 - 不允许过饱和、糖果色、发光宝石感、彩色玻璃感。
+- 彩钻套 supporting_jewelry_limit 默认 minimal or none。
+- 彩钻套全身/半身禁止强项链、强耳饰、多层手链、手表抢主彩钻产品。
+
+## visual_scale_lock 默认规则
+
+- 大克拉钻戒：statement but natural
+- 普通钻戒：medium visible
+- 彩钻钻戒：statement but natural
+- 经典项链：medium visible
+- 细链或叠戴项链：subtle to medium visible
+- 耳饰：medium visible
+- 手链：medium visible
+
+## supporting_jewelry_limit 默认规则
+
+- 白钻钻戒：low-profile only
+- 彩钻钻戒：minimal or none
+- 项链：minimal earrings allowed, no competing necklace
+- 耳饰：no competing statement necklace
+- 手链：low-profile rings allowed, no competing bracelet stack
 
 ## 钻戒原型
 
